@@ -1,0 +1,37 @@
+//Fonction somme de 5 nombre exercice 11.1
+
+Fonction SommeNb5(n1,n2,n3,n4,n5 en entier) en entier// Création fonction
+    Renvoyer n1+n2+n3+n4+n5
+FinFonction
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Fonction qui renvoi nombre de voyelles dans chaîne de caractère exercice 11.2
+
+Variable phrase en caractère
+Variable NBMot, NBLettre, i en Entier
+Fonction Nbvoyelles(Phrase en caractère) en entier
+    NBMot = 0 
+        Pour i = 1 à Len(phrase)
+            Si Trouve("aeiouy", mid(phrase,i,1)) <> 0 alors
+            NBMot = NBMot + 1
+            Finsi
+            isuivant
+            Renvoyer NBmot
+FinFonction
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Fonction qui renvoi nombre de voyelles dans chaîne de caractère sans Trouve exercice 11.3
+
+Variable i en entier
+Fonction Touver(a,b en caractère) en entier
+    Si len(b) > len(a) alors
+        renvoyer 0
+    Finsi
+    Pour i = 1 à len(a)
+        Tant que i < len(a)+1 - len(b) et b <> mid(a,i,len(b))
+        i = i+1
+        Fintantque
+        Si b <> mid(a,i,len(b)) alors
+            renvoyer 0
+        Sinon
+        Finsi
+        renvoyer i
+FinFonction
